@@ -27,5 +27,5 @@ for root, dirs, files in os.walk(rootDir):
 os.system("git status")
 os.system("git add .")
 os.system("git status")
-os.system("git commit -m '提交：" + time.strftime("%Y%m%d%H%M%S") + "'")
+os.system("git commit -m '提交：" + time.strftime("%Y%m%d-%H%M%S") + "'")
 os.system("git push -u origin master")
